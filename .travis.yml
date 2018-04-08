@@ -1,8 +1,14 @@
 language: c
 
+compiler:
+  - clang
+  - gcc
+
 before_script:
   - autoreconf -vif
 
 script:
   - ./configure
   - make
+
+install: true
