@@ -1,0 +1,8 @@
+language: c
+
+before_script:
+  - autoreconf -vif
+
+script:
+  - ./configure
+  - make
